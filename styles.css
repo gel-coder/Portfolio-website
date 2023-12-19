@@ -1,0 +1,152 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #6499e9;
+  color: #befff7;
+  padding: 20px 0;
+}
+/* Your existing styles */
+
+nav {
+  background-color: #6499e9;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation a {
+  display: block;
+  color: #befff7;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navigation a:hover {
+  background-color: #befff7;
+  color: #6499e9;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 80px;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #6499e9;
+}
+
+p {
+  line-height: 1.6;
+}
+
+#about {
+  padding: 100px;
+}
+.profilepic {
+  border-radius: 100%;
+  width: 500px;
+  display: block; /* Make the image a block element to center it horizontally */
+  margin: 0 auto; /* Center the image using auto margins */
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto;
+}
+
+.project {
+  margin: 100px;
+}
+img {
+  width: 300px; /* Set a specific pixel value for the width */
+  height: auto;
+}
+/* Your existing styles */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.contact-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  align-items: center;
+}
+
+.contact-card h2 {
+  color: #333;
+}
+
+.contact-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+footer {
+  background-color: #6499e9;
+  color: #befff7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.animated-element {
+  opacity: 0; /* Initially set the opacity to 0 */
+  transform: translateX(
+    -50px
+  ); /* Initially translate the element to the left by 50 pixels */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.animated-element.active {
+  opacity: 1; /* Set the opacity to 1 when the 'active' class is applied */
+  transform: translateX(
+    0
+  ); /* Set the translation to 0 to bring the element back to its original position */
+}
+
+.continuous-animation {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+  animation: rotate 3s linear infinite; /* Rotate animation with a duration of 3 seconds and set to run infinitely */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
